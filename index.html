@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdualrahman Alkhambashi — Projects</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#f0f4f8; --surface:#ffffff; --border:#d8e2ec; --accent:#0057a8; --accent-light:#e8f1fb; --text:#1a2535; --sub:#3d5166; --muted:#7a92a8; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Tajawal',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+  .wrap { max-width:700px; margin:0 auto; padding:56px 24px 72px; }
+  .header { text-align:center; margin-bottom:52px; }
+  .badge-top { display:inline-flex; align-items:center; gap:8px; background:var(--accent-light); border:1px solid rgba(0,87,168,0.2); border-radius:100px; padding:6px 18px; font-size:12px; color:var(--accent); margin-bottom:22px; font-weight:600; }
+  .name-en { font-family:'DM Serif Display',serif; font-size:clamp(26px,5.5vw,38px); font-weight:400; color:var(--text); margin-bottom:6px; }
+  .name-ar { font-size:17px; font-weight:700; color:var(--sub); margin-bottom:22px; }
+  .role-pills { display:flex; justify-content:center; gap:8px; flex-wrap:wrap; }
+  .pill { background:var(--surface); border:1px solid var(--border); border-radius:100px; padding:5px 14px; font-size:12px; color:var(--sub); font-weight:500; }
+  .divider { display:flex; align-items:center; gap:16px; margin-bottom:32px; }
+  .divider-line { flex:1; height:1px; background:var(--border); }
+  .divider-label { font-size:11px; letter-spacing:2.5px; color:var(--muted); white-space:nowrap; font-weight:600; }
+  .cards { display:flex; flex-direction:column; gap:16px; }
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:18px; padding:26px 28px; text-decoration:none; color:inherit; display:block; position:relative; overflow:hidden; box-shadow:0 2px 16px rgba(0,60,120,0.08); transition:transform 0.25s,box-shadow 0.25s; }
+  .card::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; border-radius:18px 18px 0 0; opacity:0; transition:opacity 0.3s; }
+  .card.blue::before { background:linear-gradient(90deg,#0057a8,#00a8e8); }
+  .card.teal::before { background:linear-gradient(90deg,#00897b,#00c6ae); }
+  .card.indigo::before { background:linear-gradient(90deg,#5c35c7,#8b5cf6); }
+  .card:hover { transform:translateY(-3px); box-shadow:0 8px 32px rgba(0,60,120,0.14); }
+  .card:hover::before { opacity:1; }
+  .card-top { display:flex; align-items:flex-start; gap:16px; margin-bottom:20px; }
+  .icon-box { width:50px; height:50px; border-radius:13px; display:flex; align-items:center; justify-content:center; font-size:22px; flex-shrink:0; }
+  .card.blue .icon-box { background:#e8f2fc; }
+  .card.teal .icon-box { background:#e0f5f2; }
+  .card.indigo .icon-box { background:#ede8fb; }
+  .card-titles { flex:1; }
+  .title-en { font-family:'DM Serif Display',serif; font-size:18px; font-weight:400; color:var(--text); margin-bottom:4px; }
+  .title-ar { font-size:14px; font-weight:700; }
+  .card.blue .title-ar { color:#0057a8; }
+  .card.teal .title-ar { color:#00776d; }
+  .card.indigo .title-ar { color:#5c35c7; }
+  .arrow-icon { font-size:16px; color:var(--muted); flex-shrink:0; margin-top:6px; }
+  .desc { display:grid; grid-template-columns:1fr 1fr; gap:14px 24px; padding-top:16px; border-top:1px solid var(--border); }
+  .desc-lang { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--muted); margin-bottom:5px; font-weight:700; }
+  .desc-text-en { font-size:13px; line-height:1.75; color:var(--sub); direction:ltr; text-align:left; }
+  .desc-text-ar { font-size:13.5px; line-height:1.85; color:var(--sub); direction:rtl; text-align:right; }
+  .card-tag { display:inline-block; margin-top:14px; border-radius:100px; padding:3px 12px; font-size:11px; font-weight:600; }
+  .card.blue .card-tag { background:#e8f2fc; color:#0057a8; }
+  .card.teal .card-tag { background:#e0f5f2; color:#00776d; }
+  .card.indigo .card-tag { background:#ede8fb; color:#5c35c7; }
+  .footer { margin-top:48px; text-align:center; }
+  .footer-inner { display:inline-flex; flex-direction:column; align-items:center; gap:8px; }
+  .footer-name { font-size:13px; color:var(--muted); font-weight:500; }
+  .footer-contact { display:flex; gap:20px; }
+  .footer-contact a { font-size:12px; color:var(--muted); text-decoration:none; direction:ltr; }
+  @media (max-width:520px) { .desc { grid-template-columns:1fr; } .wrap { padding:36px 16px 56px; } .card { padding:20px 16px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="header">
+    <div class="badge-top">Innovation &amp; Development · East Jeddah Hospital</div>
+    <div class="name-en">Abdualrahman Alkhambashi</div>
+    <div class="name-ar">عبدالرحمن خالد الخمبشي</div>
+    <div class="role-pills">
+      <span class="pill">🏥 ممرض مسؤول</span>
+      <span class="pill">💻 مطوّر تطبيقات</span>
+      <span class="pill">📱 Charge Nurse · App Builder</span>
+    </div>
+  </header>
+  <div class="divider">
+    <div class="divider-line"></div>
+    <span class="divider-label">Digital Projects · المشاريع الرقمية</span>
+    <div class="divider-line"></div>
+  </div>
+  <div class="cards">
+    <a class="card blue" href="https://ejh-chat-35d0b.web.app" target="_blank">
+      <div class="card-top">
+        <div class="icon-box">💬</div>
+        <div class="card-titles">
+          <div class="title-en">EJH Chat</div>
+          <div class="title-ar">نظام التواصل الداخلي</div>
+        </div>
+        <div class="arrow-icon">←</div>
+      </div>
+      <div class="desc">
+        <div class="desc-block">
+          <div class="desc-lang">EN</div>
+          <div class="desc-text-en">An internal real-time messaging platform for East Jeddah Hospital staff. Enables instant communication between employees and patients, improving response times across the hospital.</div>
+        </div>
+        <div class="desc-block">
+          <div class="desc-lang">AR</div>
+          <div class="desc-text-ar">منصة تراسل فوري داخلية مخصصة لكوادر مستشفى شرق جدة، تُتيح التواصل اللحظي بين الموظفين والمرضى لتحسين وقت الاستجابة.</div>
+        </div>
+      </div>
+      <span class="card-tag">Flutter · Firebase Hosting</span>
+    </a>
+    <a class="card teal" href="https://www.appsheet.com/newshortcut/f6f0539b-d231-47f7-ba9b-0bd7ba5d6082" target="_blank">
+      <div class="card-top">
+        <div class="icon-box">🔬</div>
+        <div class="card-titles">
+          <div class="title-en">Sterilization Documentation System</div>
+          <div class="title-ar">نظام توثيق التعقيم</div>
+        </div>
+        <div class="arrow-icon">←</div>
+      </div>
+      <div class="desc">
+        <div class="desc-block">
+          <div class="desc-lang">EN</div>
+          <div class="desc-text-en">A visual tracking system for surgical instrument sets (SETs). Each set is linked to live photos, a unique code, and a sterilization timestamp — with instant search and automatic color highlighting for sets sterilized within the last 24 hours.</div>
+        </div>
+        <div class="desc-block">
+          <div class="desc-lang">AR</div>
+          <div class="desc-text-ar">نظام توثيق بصري لمجموعات الأدوات الجراحية، يربط كل سيت بصور حية وكود تعريفي فريد وتاريخ تعقيم دقيق، مع بحث فوري وتمييز تلقائي بالألوان للسيتات المعقّمة خلال آخر 24 ساعة.</div>
+        </div>
+      </div>
+      <span class="card-tag">AppSheet · Google Sheets · No-Code</span>
+    </a>
+    <a class="card indigo" href="https://www.appsheet.com/newshortcut/51cc9a19-a1f1-4302-bbfd-3f9d92f9b00e" target="_blank">
+      <div class="card-top">
+        <div class="icon-box">🏬</div>
+        <div class="card-titles">
+          <div class="title-en">Store OR Department</div>
+          <div class="title-ar">إدارة مستودع غرفة العمليات</div>
+        </div>
+        <div class="arrow-icon">←</div>
+      </div>
+      <div class="desc">
+        <div class="desc-block">
+          <div class="desc-lang">EN</div>
+          <div class="desc-text-en">OR inventory management app with three modules: supply tracking (STOR) with expiry alerts, device status monitoring, and patient-linked consumption with automatic stock deduction — all on one dashboard.</div>
+        </div>
+        <div class="desc-block">
+          <div class="desc-lang">AR</div>
+          <div class="desc-text-ar">تطبيق متكامل لإدارة مستودع غرفة العمليات بثلاث وحدات: المخزون الطبي مع تنبيهات الصلاحية، تتبع حالة الأجهزة، وتسجيل استهلاك المريض مع خصم آلي — في لوحة تحكم واحدة.</div>
+        </div>
+      </div>
+      <span class="card-tag">AppSheet · Google Sheets · No-Code</span>
+    </a>
+  </div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-name">Abdualrahman K. Alkhambashi · East Jeddah General Hospital</div>
+      <div class="footer-contact">
+        <a href="tel:+966544476471">+966 544 476 471</a>
+        <a href="mailto:Abdoo-2021@hotmail.com">Abdoo-2021@hotmail.com</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
